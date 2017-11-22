@@ -86,15 +86,26 @@ p "Jonathan's Twitter handle: #{ users["Jonathan"][:twitter]}"
 p "Erik's hometown: #{users["Erik"][:home_town]}"
 
 # 3. Get the array of Erik's favourite numbers
-p "An array of Erik's favourite numbers: #{users["Erik"][:favourite_numbers]}"
+eriks_fav_numbers = users["Erik"][:favourite_numbers]
+p "An array of Erik's favourite numbers: #{eriks_fav_numbers}"
 
 # 4. Get the type of Avril's pet Colin
 p "Type of Avril's pet Colin: #{users["Avril"][:pets]["colin"]}"
 
 # 5. Get the smallest of Erik's favourite numbers
+p "The smallest of Erik's favourite numbers: #{users["Erik"][:favourite_numbers].min}"
+
 # 6. Add the number `7` to Erik's favourite numbers
+eriks_fav_numbers.map! {|number| number +=7 }
+p "Erik's favourite numbers with 7 added: #{eriks_fav_numbers}"
+
 # 7. Change Erik's hometown to Edinburgh
+users["Erik"][:home_town]="Edinburgh"
+p users["Erik"][:home_town]
+
 # 8. Add a pet dog to Erik called "Fluffy"
+
+
 # 9. Add yourself to the users hash
 
 
