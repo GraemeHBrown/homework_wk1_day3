@@ -17,12 +17,16 @@ stops.unshift("Glasgow Queen St")
 stops.insert(4, "Polmont")
 
 # 4. Work out the index position of `"Linlithgow"`
- p stops.index("Linlithgow")
+ p "Index of Linlithgow: #{stops.index('Linlithgow')}"
 
 # 5. Remove `"Livingston"` from the array using its name
+stops.delete("Livingston")
 
 # 6. Delete `"Cumbernauld"` from the array by index
+stops.delete_at(stops.index("Cumbernauld"))
+p stops
 # 7. How many stops there are in the array?
+p "There are #{stops.length()} stops in the array"
 # 8. How many ways can we return `"Falkirk High"` from the array?
 # 9. Reverse the positions of the stops in the array
 # 10. Print out all the stops using a for loop
