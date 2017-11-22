@@ -77,6 +77,14 @@ end
         "colin" => :snake
       }
     },
+    "Graeme" => {
+      :twitter => nil,
+      :favourite_numbers => [2,12,24],
+      :home_town => "Perth",
+      :pets => {
+        "n/a" => nil
+      }
+    }
   }
 
 # 1. Get Jonathan's Twitter handle (i.e. the string `"jonnyt"`)
@@ -104,10 +112,11 @@ users["Erik"][:home_town]="Edinburgh"
 p users["Erik"][:home_town]
 
 # 8. Add a pet dog to Erik called "Fluffy"
-
+users["Erik"][:pets]["Fluffy"]=:dog
+p users["Erik"][:pets]
 
 # 9. Add yourself to the users hash
-
+p users["Graeme"]
 
 
 ## C. Given the following data structure:
