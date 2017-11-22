@@ -109,14 +109,14 @@ p "Erik's favourite numbers with 7 added: #{eriks_fav_numbers}"
 
 # 7. Change Erik's hometown to Edinburgh
 users["Erik"][:home_town]="Edinburgh"
-p users["Erik"][:home_town]
+p "Erik's new home town: #{users["Erik"][:home_town]}"
 
 # 8. Add a pet dog to Erik called "Fluffy"
 users["Erik"][:pets]["Fluffy"]=:dog
-p users["Erik"][:pets]
+p "Erik's new pet added:#{users["Erik"][:pets]}"
 
 # 9. Add yourself to the users hash
-p users["Graeme"]
+p "Added myself to users hash: #{users["Graeme"]}"                            
 
 
 ## C. Given the following data structure:
@@ -140,6 +140,28 @@ united_kingdom = [
 
 
 # 1. Change the capital of Wales from `"Swansea"` to `"Cardiff"`.
+for country in united_kingdom
+  if country[:name]=="Wales"
+    country[:capital]="Cardiff"
+    p "Capital changed to: #{country[:capital]}"
+  end
+end
+
 # 2. Create a Hash for Northern Ireland and add it to the `united_kingdom` array (The capital is Belfast, and the population is 1,811,000).
+united_kingdom.push({  name: "Northern Ireland", population: 1811000, capital: "Belfast"})
+for country in united_kingdom
+  if country[:name]=="Northern Ireland"
+    p "Added: #{country[:name]} with population of: #{country[:population]} and capital of: #{country[:capital]}"
+  end
+end
 # 3. Use a loop to print the names of all the countries in the UK.
+for country in united_kingdom
+  p "Country name: #{country[:name]}"
+end
+
 # 4. Use a loop to find the total population of the UK.
+total_population = 0
+for country in united_kingdom
+  total_population += country[:population]
+end
+p "Total population of UK: #{total_population}"
