@@ -86,8 +86,11 @@ p "Jonathan's Twitter handle: #{ users["Jonathan"][:twitter]}"
 p "Erik's hometown: #{users["Erik"][:home_town]}"
 
 # 3. Get the array of Erik's favourite numbers
+p "An array of Erik's favourite numbers: #{users["Erik"][:favourite_numbers]}"
 
 # 4. Get the type of Avril's pet Colin
+p "Type of Avril's pet Colin: #{users["Avril"][:pets]["colin"]}"
+
 # 5. Get the smallest of Erik's favourite numbers
 # 6. Add the number `7` to Erik's favourite numbers
 # 7. Change Erik's hometown to Edinburgh
