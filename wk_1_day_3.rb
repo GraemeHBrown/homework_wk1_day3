@@ -80,8 +80,13 @@ end
   }
 
 # 1. Get Jonathan's Twitter handle (i.e. the string `"jonnyt"`)
+p "Jonathan's Twitter handle: #{ users["Jonathan"][:twitter]}"
+
 # 2. Get Erik's hometown
+p "Erik's hometown: #{users["Erik"][:home_town]}"
+
 # 3. Get the array of Erik's favourite numbers
+
 # 4. Get the type of Avril's pet Colin
 # 5. Get the smallest of Erik's favourite numbers
 # 6. Add the number `7` to Erik's favourite numbers
@@ -89,7 +94,9 @@ end
 # 8. Add a pet dog to Erik called "Fluffy"
 # 9. Add yourself to the users hash
 
-# C. Given the following data structure:
+
+
+## C. Given the following data structure:
 
 
 united_kingdom = [
