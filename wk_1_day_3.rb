@@ -24,12 +24,26 @@ stops.delete("Livingston")
 
 # 6. Delete `"Cumbernauld"` from the array by index
 stops.delete_at(stops.index("Cumbernauld"))
-p stops
+
 # 7. How many stops there are in the array?
 p "There are #{stops.length()} stops in the array"
+
 # 8. How many ways can we return `"Falkirk High"` from the array?
+index_to_select = stops.index('Falkirk High')
+p stops[index_to_select] # a simple way
+p stops.select { |stop| stop == "Falkirk High"} # returns array with match
+p stops.fetch(index_to_select) # another way
+#there are probably other ways as well...
+
+
 # 9. Reverse the positions of the stops in the array
+p stops.reverse! #which changes the order in the array rather than creating a new copy
+
 # 10. Print out all the stops using a for loop
+for stop in stops
+  p stop
+end
+
 
 ## B. Given the following data structure:
 
