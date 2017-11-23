@@ -20,7 +20,8 @@ stops.insert(4, "Polmont")
  p "Index of Linlithgow: #{stops.index('Linlithgow')}"
 
 # 5. Remove `"Livingston"` from the array using its name
-stops.delete("Livingston")
+deleted_item = stops.delete("Livingston") #delete returns item to be deleted
+p deleted_item
 
 # 6. Delete `"Cumbernauld"` from the array by index
 stops.delete_at(stops.index("Cumbernauld"))
@@ -101,7 +102,7 @@ p "An array of Erik's favourite numbers: #{eriks_fav_numbers}"
 p "Type of Avril's pet Colin: #{users["Avril"][:pets]["colin"]}"
 
 # 5. Get the smallest of Erik's favourite numbers
-p "The smallest of Erik's favourite numbers: #{users["Erik"][:favourite_numbers].min}"
+p "The smallest of Erik's favourite numbers: #{users["Erik"][:favourite_numbers].min()}"
 
 # 6. Add the number `7` to Erik's favourite numbers
 eriks_fav_numbers.map! {|number| number +=7 }
@@ -116,7 +117,7 @@ users["Erik"][:pets]["Fluffy"]=:dog
 p "Erik's new pet added:#{users["Erik"][:pets]}"
 
 # 9. Add yourself to the users hash
-p "Added myself to users hash: #{users["Graeme"]}"                            
+p "Added myself to users hash: #{users["Graeme"]}"
 
 
 ## C. Given the following data structure:
